@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.practice__wrapper {
+  width: 600px;
+  margin: 30px 0;
+  margin-left: calc(50% - 300px);
+}

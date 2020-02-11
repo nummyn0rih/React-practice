@@ -18,8 +18,7 @@ export default class Component extends React.Component {
     e.preventDefault();
     const { text, items } = this.state;
     const id = uniqueId();
-    const item = <Item onRemove={this.handleRemove} text={text} id={id} />;
-    const newItems = [{ id, item }, ...items];
+    const newItems = [{ id, text }, ...items];
     this.setState({
       text: '',
       items: newItems,
@@ -34,19 +33,21 @@ export default class Component extends React.Component {
 
   renderItems = () => {
     const { items } = this.state;
+
     if (!items.length) {
       return null;
     }
 
-    const list = items.map((item) => {
-      console.log(item)
-      console.log(item.item)
-      return item.item
-    });
     return (
-      <>
-        {[...list]}
-      </>
+      items.map((i) => {
+        const { id, text } = i;
+
+        return (
+          <React.Fragment key={id}>
+            <Item onRemove={this.handleRemove(id)} text={text} />
+          </React.Fragment>
+        );
+      })
     );
   }
 

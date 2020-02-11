@@ -6,10 +6,10 @@ import MyForm from './Components/MyForm';
 import Component from './Components/Component';
 import TodoBox from './Components/TodoBox';
 import Card from './Components/Card';
-import Modal from './Components/Modal';
+import ModalComponent from './Components/ModalComponent';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Modal />, document.querySelector('.modal'));
+ReactDOM.render(<ModalComponent />, document.querySelector('.mod'));
 
 const card = (
   <Card>

@@ -14,6 +14,6 @@ export default class Card extends React.Component {
 
   render() {
     const { children } = this.props;
-    return <div className="card">{children}</div>;
+    return <div className="card shadow-lg border-light">{children}</div>;
   }
 }

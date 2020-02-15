@@ -56,7 +56,7 @@ export default class Component extends React.Component {
     const { text } = this.state;
 
     return (
-      <div>
+      <div className="shadow-lg p-3 mb-5 bg-white rounded">
         <div className="mb-3">
           <form onSubmit={this.handleSubmit} className="todo-form form-inline mx-3">
             <div className="form-group">

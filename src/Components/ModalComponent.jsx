@@ -15,8 +15,8 @@ export default class Component extends React.Component {
 
   render() {
     return (
-      <div>
-        <button type="button" className="modal-open-button btn btn-danger" onClick={this.toggle}>Open</button>
+      <div className="shadow-lg p-3 mb-5 bg-white rounded">
+        <button type="button" className="modal-open-button btn btn-danger" onClick={this.toggle}>Open modal</button>
         <Modal isOpen={this.state.modal}>
           <Modal.Header toggle={this.toggle}>Modal title</Modal.Header>
           <Modal.Body>

@@ -45,7 +45,7 @@ export default class MyForm extends React.Component {
     } = this.state;
 
     const form = (
-      <form onSubmit={this.handleSubmit}>
+      <form className="shadow-lg p-3 mb-5 bg-white rounded" onSubmit={this.handleSubmit}>
         <div className="form-row">
           <div className="form-group col-md-6">
             <label htmlFor="inputEmail4" className="col-form-label">Email</label>
@@ -126,8 +126,8 @@ export default class MyForm extends React.Component {
     );
 
     const table = (
-      <div>
-        <button onClick={this.handleBackward} type="button">Back</button>
+      <div className="shadow-lg p-3 mb-5 bg-white rounded">
+        <button class="btn btn-primary table__btn" onClick={this.handleBackward} type="button">Back</button>
         <table className="table">
           <tbody>
             <tr>

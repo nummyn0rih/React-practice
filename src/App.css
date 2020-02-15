@@ -43,6 +43,19 @@
   margin-left: calc(50% - 300px);
 }
 
+.table__btn {
+  margin-bottom: 15px;
+}
+
+.row {
+  margin: 0px;
+}
+
 .post {
   margin-bottom: 5px;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
 }

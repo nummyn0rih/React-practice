@@ -48,10 +48,10 @@ export default class Component extends React.Component {
     const listGroup = (!buttonList.length ? null : <div className="list-group">{[...buttonList]}</div>);
 
     return (
-      <div>
-        <div className="btn-group" role="group">
-          <button onClick={this.handleInc} type="button" className="btn hexlet-inc">+</button>
-          <button onClick={this.handleDec} type="button" className="btn hexlet-dec">-</button>
+      <div className="shadow-lg p-3 mb-5 bg-white rounded">
+        <div className="btn-group" role="group" aria-label="Basic example">
+          <button onClick={this.handleInc} type="button" className="btn btn-secondary">+</button>
+          <button onClick={this.handleDec} type="button" className="btn btn-secondary">-</button>
         </div>
         {listGroup}
       </div>

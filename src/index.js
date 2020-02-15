@@ -8,8 +8,10 @@ import TodoBox from './Components/TodoBox';
 import Card from './Components/Card';
 import ModalComponent from './Components/ModalComponent';
 import Autocomplete  from './Components/Autocomplete';
+import Clock from './Components/Clock';
 import * as serviceWorker from './serviceWorker';
 
+ReactDOM.render(<Clock />, document.querySelector('.clock'));
 ReactDOM.render(<Autocomplete />, document.querySelector('.autocomplete'));
 ReactDOM.render(<ModalComponent />, document.querySelector('.mod'));
 
